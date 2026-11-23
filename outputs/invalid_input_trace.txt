@@ -1,0 +1,189 @@
+
+===== OSim - OS Resource Manager =====
+ 1) CPU scheduling          5) System info (Bash)
+ 2) Memory management       6) Activity-log summary (Bash)
+ 3) Deadlock (Banker's)     7) Run full demo
+ 4) Disk scheduling         0) Exit
+Select:   [!] Please choose a number from the menu.
+
+===== OSim - OS Resource Manager =====
+ 1) CPU scheduling          5) System info (Bash)
+ 2) Memory management       6) Activity-log summary (Bash)
+ 3) Deadlock (Banker's)     7) Run full demo
+ 4) Disk scheduling         0) Exit
+Select:   [!] Please choose a number from the menu.
+
+===== OSim - OS Resource Manager =====
+ 1) CPU scheduling          5) System info (Bash)
+ 2) Memory management       6) Activity-log summary (Bash)
+ 3) Deadlock (Banker's)     7) Run full demo
+ 4) Disk scheduling         0) Exit
+Select: Processes: [d]efault sample / [c]ustom input? Number of processes (1-20):   [!] count must be an integer, got 'zero'
+Number of processes (1-20):   [!] count must be between 1 and 20, got -5
+Number of processes (1-20):   P1 arrival time:   P1 burst time:   P1 priority (lower = higher):   P2 arrival time:   P2 burst time:   P2 priority (lower = higher): Round-robin quantum [2]: 
+======================================================================
+ MODULE 1 - CPU SCHEDULING
+======================================================================
+Input dataset
++-----+---------+-------+----------+
+| PID | Arrival | Burst | Priority |
++-----+---------+-------+----------+
+| P1  | 0       | 4     | 1        |
+| P2  | 0       | 2     | 0        |
++-----+---------+-------+----------+
+
+FCFS  Gantt: |P1 0-4 |P2 4-6|
++-----+----+-----+----+----+
+| PID | CT | TAT | WT | RT |
++-----+----+-----+----+----+
+| P1  | 4  | 4   | 0  | 0  |
+| P2  | 6  | 6   | 4  | 4  |
++-----+----+-----+----+----+
+
+SJF  Gantt: |P2 0-2 |P1 2-6|
++-----+----+-----+----+----+
+| PID | CT | TAT | WT | RT |
++-----+----+-----+----+----+
+| P1  | 6  | 6   | 2  | 2  |
+| P2  | 2  | 2   | 0  | 0  |
++-----+----+-----+----+----+
+
+SRTF  Gantt: |P2 0-2 |P1 2-6|
++-----+----+-----+----+----+
+| PID | CT | TAT | WT | RT |
++-----+----+-----+----+----+
+| P1  | 6  | 6   | 2  | 2  |
+| P2  | 2  | 2   | 0  | 0  |
++-----+----+-----+----+----+
+
+RR(q=1)  Gantt: |P1 0-1 |P2 1-2 |P1 2-3 |P2 3-4 |P1 4-6|
++-----+----+-----+----+----+
+| PID | CT | TAT | WT | RT |
++-----+----+-----+----+----+
+| P1  | 6  | 6   | 2  | 0  |
+| P2  | 4  | 4   | 2  | 1  |
++-----+----+-----+----+----+
+
+Priority  Gantt: |P2 0-2 |P1 2-6|
++-----+----+-----+----+----+
+| PID | CT | TAT | WT | RT |
++-----+----+-----+----+----+
+| P1  | 6  | 6   | 2  | 2  |
+| P2  | 2  | 2   | 0  | 0  |
++-----+----+-----+----+----+
+
+Algorithm comparison
++-----------+--------+---------+--------+-------+------------+
+| Algorithm | Avg WT | Avg TAT | Avg RT | CPU % | Throughput |
++-----------+--------+---------+--------+-------+------------+
+| FCFS      | 2.00   | 5.00    | 2.00   | 100.0 | 0.333      |
+| SJF       | 1.00   | 4.00    | 1.00   | 100.0 | 0.333      |
+| SRTF      | 1.00   | 4.00    | 1.00   | 100.0 | 0.333      |
+| RR(q=1)   | 2.00   | 5.00    | 0.50   | 100.0 | 0.333      |
+| Priority  | 1.00   | 4.00    | 1.00   | 100.0 | 0.333      |
++-----------+--------+---------+--------+-------+------------+
+Observation: SJF gives the lowest average waiting time (1.00).
+Charts saved: outputs/scheduling_comparison.png, outputs/gantt_round_robin.png
+
+===== OSim - OS Resource Manager =====
+ 1) CPU scheduling          5) System info (Bash)
+ 2) Memory management       6) Activity-log summary (Bash)
+ 3) Deadlock (Banker's)     7) Run full demo
+ 4) Disk scheduling         0) Exit
+Select: Processes: [d]efault sample / [c]ustom input? Round-robin quantum [2]:   [!] quantum must be between 1 and 100, got 0
+Round-robin quantum [2]: 
+======================================================================
+ MODULE 1 - CPU SCHEDULING
+======================================================================
+Input dataset
++-----+---------+-------+----------+
+| PID | Arrival | Burst | Priority |
++-----+---------+-------+----------+
+| P1  | 0       | 8     | 3        |
+| P2  | 1       | 4     | 1        |
+| P3  | 2       | 9     | 4        |
+| P4  | 3       | 5     | 2        |
+| P5  | 4       | 2     | 5        |
+| P6  | 6       | 6     | 2        |
++-----+---------+-------+----------+
+
+FCFS  Gantt: |P1 0-8 |P2 8-12 |P3 12-21 |P4 21-26 |P5 26-28 |P6 28-34|
++-----+----+-----+----+----+
+| PID | CT | TAT | WT | RT |
++-----+----+-----+----+----+
+| P1  | 8  | 8   | 0  | 0  |
+| P2  | 12 | 11  | 7  | 7  |
+| P3  | 21 | 19  | 10 | 10 |
+| P4  | 26 | 23  | 18 | 18 |
+| P5  | 28 | 24  | 22 | 22 |
+| P6  | 34 | 28  | 22 | 22 |
++-----+----+-----+----+----+
+
+SJF  Gantt: |P1 0-8 |P5 8-10 |P2 10-14 |P4 14-19 |P6 19-25 |P3 25-34|
++-----+----+-----+----+----+
+| PID | CT | TAT | WT | RT |
++-----+----+-----+----+----+
+| P1  | 8  | 8   | 0  | 0  |
+| P2  | 14 | 13  | 9  | 9  |
+| P3  | 34 | 32  | 23 | 23 |
+| P4  | 19 | 16  | 11 | 11 |
+| P5  | 10 | 6   | 4  | 4  |
+| P6  | 25 | 19  | 13 | 13 |
++-----+----+-----+----+----+
+
+SRTF  Gantt: |P1 0-1 |P2 1-5 |P5 5-7 |P4 7-12 |P6 12-18 |P1 18-25 |P3 25-34|
++-----+----+-----+----+----+
+| PID | CT | TAT | WT | RT |
++-----+----+-----+----+----+
+| P1  | 25 | 25  | 17 | 0  |
+| P2  | 5  | 4   | 0  | 0  |
+| P3  | 34 | 32  | 23 | 23 |
+| P4  | 12 | 9   | 4  | 4  |
+| P5  | 7  | 3   | 1  | 1  |
+| P6  | 18 | 12  | 6  | 6  |
++-----+----+-----+----+----+
+
+RR(q=2)  Gantt: |P1 0-2 |P2 2-4 |P3 4-6 |P1 6-8 |P4 8-10 |P5 10-12 |P2 12-14 |P6 14-16 |P3 16-18 |P1 18-20 |P4 20-22 |P6 22-24 |P3 24-26 |P1 26-28 |P4 28-29 |P6 29-31 |P3 31-34|
++-----+----+-----+----+----+
+| PID | CT | TAT | WT | RT |
++-----+----+-----+----+----+
+| P1  | 28 | 28  | 20 | 0  |
+| P2  | 14 | 13  | 9  | 1  |
+| P3  | 34 | 32  | 23 | 2  |
+| P4  | 29 | 26  | 21 | 5  |
+| P5  | 12 | 8   | 6  | 6  |
+| P6  | 31 | 25  | 19 | 8  |
++-----+----+-----+----+----+
+
+Priority  Gantt: |P1 0-8 |P2 8-12 |P4 12-17 |P6 17-23 |P3 23-32 |P5 32-34|
++-----+----+-----+----+----+
+| PID | CT | TAT | WT | RT |
++-----+----+-----+----+----+
+| P1  | 8  | 8   | 0  | 0  |
+| P2  | 12 | 11  | 7  | 7  |
+| P3  | 32 | 30  | 21 | 21 |
+| P4  | 17 | 14  | 9  | 9  |
+| P5  | 34 | 30  | 28 | 28 |
+| P6  | 23 | 17  | 11 | 11 |
++-----+----+-----+----+----+
+
+Algorithm comparison
++-----------+--------+---------+--------+-------+------------+
+| Algorithm | Avg WT | Avg TAT | Avg RT | CPU % | Throughput |
++-----------+--------+---------+--------+-------+------------+
+| FCFS      | 13.17  | 18.83   | 13.17  | 100.0 | 0.176      |
+| SJF       | 10.00  | 15.67   | 10.00  | 100.0 | 0.176      |
+| SRTF      | 8.50   | 14.17   | 5.67   | 100.0 | 0.176      |
+| RR(q=2)   | 16.33  | 22.00   | 3.67   | 100.0 | 0.176      |
+| Priority  | 12.67  | 18.33   | 12.67  | 100.0 | 0.176      |
++-----------+--------+---------+--------+-------+------------+
+Observation: SRTF gives the lowest average waiting time (8.50).
+Charts saved: outputs/scheduling_comparison.png, outputs/gantt_round_robin.png
+
+===== OSim - OS Resource Manager =====
+ 1) CPU scheduling          5) System info (Bash)
+ 2) Memory management       6) Activity-log summary (Bash)
+ 3) Deadlock (Banker's)     7) Run full demo
+ 4) Disk scheduling         0) Exit
+Select: Goodbye.
+Rejected bad dataset -> line 2 burst must be between 1 and 1000000, got 0

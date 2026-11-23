@@ -1,0 +1,36 @@
+test_missing_script_and_log (test_all.TestBashIntegration.test_missing_script_and_log) ... ok
+test_sysinfo (test_all.TestBashIntegration.test_sysinfo) ... ok
+test_menu_rejects_bad_numbers_then_accepts (test_all.TestCLI.test_menu_rejects_bad_numbers_then_accepts) ... ok
+test_menu_survives_garbage_input (test_all.TestCLI.test_menu_survives_garbage_input) ... ok
+test_detection (test_all.TestDeadlock.test_detection) ... ok
+test_invalid_matrices (test_all.TestDeadlock.test_invalid_matrices) ... ok
+test_request_granted_and_denied (test_all.TestDeadlock.test_request_granted_and_denied) ... ok
+test_safe_sequence (test_all.TestDeadlock.test_safe_sequence) ... ok
+test_unsafe_state_detected (test_all.TestDeadlock.test_unsafe_state_detected) ... ok
+test_boundary_head_at_edge_and_single_request (test_all.TestDisk.test_boundary_head_at_edge_and_single_request) ... ok
+test_invalid (test_all.TestDisk.test_invalid) ... ok
+test_known_movement (test_all.TestDisk.test_known_movement) ... ok
+test_allocation_strategies (test_all.TestMemory.test_allocation_strategies) ... ok
+test_beladys_anomaly_reproduced (test_all.TestMemory.test_beladys_anomaly_reproduced) ... ok
+test_boundary_one_frame_every_distinct_ref_faults (test_all.TestMemory.test_boundary_one_frame_every_distinct_ref_faults) ... ok
+test_classic_fault_counts (test_all.TestMemory.test_classic_fault_counts) ... ok
+test_enough_frames_only_compulsory_faults (test_all.TestMemory.test_enough_frames_only_compulsory_faults) ... ok
+test_invalid (test_all.TestMemory.test_invalid) ... ok
+test_boundary_single_process_and_quantum_larger_than_burst (test_all.TestScheduler.test_boundary_single_process_and_quantum_larger_than_burst) ... ok
+test_fcfs_known_values (test_all.TestScheduler.test_fcfs_known_values) ... ok
+test_idle_gap_when_cpu_waits (test_all.TestScheduler.test_idle_gap_when_cpu_waits) ... ok
+test_invalid_inputs (test_all.TestScheduler.test_invalid_inputs) ... ok
+test_round_robin_conserves_burst_time (test_all.TestScheduler.test_round_robin_conserves_burst_time) ... ok
+test_sjf_beats_fcfs_on_waiting (test_all.TestScheduler.test_sjf_beats_fcfs_on_waiting) ... ok
+test_srtf_is_optimal_for_waiting (test_all.TestScheduler.test_srtf_is_optimal_for_waiting) ... ok
+test_bad_csv_variants (test_all.TestValidationAndFiles.test_bad_csv_variants) ... ok
+test_bad_json (test_all.TestValidationAndFiles.test_bad_json) ... ok
+test_bundled_datasets_load (test_all.TestValidationAndFiles.test_bundled_datasets_load) ... ok
+test_load_valid_csv (test_all.TestValidationAndFiles.test_load_valid_csv) ... ok
+test_missing_file (test_all.TestValidationAndFiles.test_missing_file) ... ok
+test_positive_int (test_all.TestValidationAndFiles.test_positive_int) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.692s
+
+OK
