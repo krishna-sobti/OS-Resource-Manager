@@ -1,0 +1,162 @@
+2026-11-23 16:14:53,474 | ERROR   | osim.bash | script log_summary.sh failed rc=1: log file not found: /no/such.log
+2026-11-23 16:14:53,491 | INFO    | osim.bash | script sysinfo.sh ok
+2026-11-23 16:14:53,530 | WARNING | osim.main | invalid input: count must be an integer, got 'zero'
+2026-11-23 16:14:53,530 | WARNING | osim.main | invalid input: count must be between 1 and 20, got -1
+2026-11-23 16:14:53,530 | INFO    | osim.scheduler | FCFS finished: avg_wait=0.00 avg_tat=3.00
+2026-11-23 16:14:53,530 | INFO    | osim.scheduler | SJF finished: avg_wait=0.00 avg_tat=3.00
+2026-11-23 16:14:53,530 | INFO    | osim.scheduler | SRTF finished: avg_wait=0.00 avg_tat=3.00
+2026-11-23 16:14:53,530 | INFO    | osim.scheduler | RR(q=2) finished: avg_wait=0.00 avg_tat=3.00
+2026-11-23 16:14:53,530 | INFO    | osim.scheduler | Priority finished: avg_wait=0.00 avg_tat=3.00
+2026-11-23 16:14:54,150 | WARNING | osim.main | invalid menu choice 'abc'
+2026-11-23 16:14:54,151 | WARNING | osim.main | invalid menu choice '99'
+2026-11-23 16:14:54,151 | WARNING | osim.main | invalid menu choice ''
+2026-11-23 16:14:54,160 | INFO    | osim.deadlock | deadlock detection: ['P0', 'P1']
+2026-11-23 16:14:54,160 | INFO    | osim.deadlock | deadlock detection: none
+2026-11-23 16:14:54,160 | INFO    | osim.deadlock | safety check: safe=True sequence=['P1', 'P3', 'P4', 'P0', 'P2']
+2026-11-23 16:14:54,160 | INFO    | osim.deadlock | request P1 [1, 0, 2] granted
+2026-11-23 16:14:54,160 | INFO    | osim.deadlock | safety check: safe=False sequence=[]
+2026-11-23 16:14:54,160 | WARNING | osim.deadlock | request P4 [3, 3, 0] denied - would be unsafe
+2026-11-23 16:14:54,160 | INFO    | osim.deadlock | safety check: safe=True sequence=['P1', 'P3', 'P4', 'P0', 'P2']
+2026-11-23 16:14:54,160 | INFO    | osim.deadlock | safety check: safe=False sequence=[]
+2026-11-23 16:14:54,160 | INFO    | osim.disk | FCFS: movement=0
+2026-11-23 16:14:54,160 | INFO    | osim.disk | SCAN: movement=5
+2026-11-23 16:14:54,161 | INFO    | osim.disk | FCFS: movement=640
+2026-11-23 16:14:54,161 | INFO    | osim.disk | SSTF: movement=236
+2026-11-23 16:14:54,161 | INFO    | osim.disk | SCAN: movement=331
+2026-11-23 16:14:54,161 | INFO    | osim.disk | LOOK: movement=299
+2026-11-23 16:14:54,161 | INFO    | osim.memory | allocation best-fit: unplaced=0 leftover=533
+2026-11-23 16:14:54,161 | INFO    | osim.memory | allocation first-fit: unplaced=1 leftover=959
+2026-11-23 16:14:54,161 | INFO    | osim.memory | FIFO: frames=3 refs=12 faults=9
+2026-11-23 16:14:54,161 | INFO    | osim.memory | FIFO: frames=4 refs=12 faults=10
+2026-11-23 16:14:54,161 | INFO    | osim.memory | FIFO: frames=1 refs=4 faults=4
+2026-11-23 16:14:54,161 | INFO    | osim.memory | FIFO: frames=3 refs=20 faults=15
+2026-11-23 16:14:54,161 | INFO    | osim.memory | LRU: frames=3 refs=20 faults=12
+2026-11-23 16:14:54,161 | INFO    | osim.memory | Optimal: frames=3 refs=20 faults=9
+2026-11-23 16:14:54,161 | INFO    | osim.memory | LRU: frames=8 refs=20 faults=6
+2026-11-23 16:14:54,161 | INFO    | osim.scheduler | RR(q=100) finished: avg_wait=0.00 avg_tat=1.00
+2026-11-23 16:14:54,161 | INFO    | osim.scheduler | FCFS finished: avg_wait=5.75 avg_tat=11.25
+2026-11-23 16:14:54,161 | INFO    | osim.scheduler | FCFS finished: avg_wait=0.00 avg_tat=2.00
+2026-11-23 16:14:54,161 | INFO    | osim.scheduler | RR(q=2) finished: avg_wait=9.75 avg_tat=15.25
+2026-11-23 16:14:54,161 | INFO    | osim.scheduler | SJF finished: avg_wait=5.25 avg_tat=10.75
+2026-11-23 16:14:54,161 | INFO    | osim.scheduler | FCFS finished: avg_wait=5.75 avg_tat=11.25
+2026-11-23 16:14:54,161 | INFO    | osim.scheduler | FCFS finished: avg_wait=5.75 avg_tat=11.25
+2026-11-23 16:14:54,161 | INFO    | osim.scheduler | SJF finished: avg_wait=5.25 avg_tat=10.75
+2026-11-23 16:14:54,161 | INFO    | osim.scheduler | SRTF finished: avg_wait=5.00 avg_tat=10.50
+2026-11-23 16:14:54,161 | INFO    | osim.scheduler | RR(q=2) finished: avg_wait=9.75 avg_tat=15.25
+2026-11-23 16:14:54,162 | INFO    | osim.scheduler | Priority finished: avg_wait=5.75 avg_tat=11.25
+2026-11-23 16:14:54,162 | INFO    | osim.scheduler | SRTF finished: avg_wait=5.00 avg_tat=10.50
+2026-11-23 16:14:54,212 | INFO    | osim.main | demo started (large=False)
+2026-11-23 16:14:54,213 | INFO    | osim.scheduler | FCFS finished: avg_wait=13.17 avg_tat=18.83
+2026-11-23 16:14:54,213 | INFO    | osim.scheduler | SJF finished: avg_wait=10.00 avg_tat=15.67
+2026-11-23 16:14:54,213 | INFO    | osim.scheduler | SRTF finished: avg_wait=8.50 avg_tat=14.17
+2026-11-23 16:14:54,213 | INFO    | osim.scheduler | RR(q=3) finished: avg_wait=17.83 avg_tat=23.50
+2026-11-23 16:14:54,213 | INFO    | osim.scheduler | Priority finished: avg_wait=12.67 avg_tat=18.33
+2026-11-23 16:14:54,710 | INFO    | osim.memory | FIFO: frames=3 refs=20 faults=15
+2026-11-23 16:14:54,710 | INFO    | osim.memory | LRU: frames=3 refs=20 faults=12
+2026-11-23 16:14:54,710 | INFO    | osim.memory | Optimal: frames=3 refs=20 faults=9
+2026-11-23 16:14:54,710 | INFO    | osim.memory | LRU: frames=3 refs=20 faults=12
+2026-11-23 16:14:54,710 | INFO    | osim.memory | FIFO: frames=1 refs=20 faults=20
+2026-11-23 16:14:54,710 | INFO    | osim.memory | FIFO: frames=2 refs=20 faults=15
+2026-11-23 16:14:54,710 | INFO    | osim.memory | FIFO: frames=3 refs=20 faults=15
+2026-11-23 16:14:54,710 | INFO    | osim.memory | FIFO: frames=4 refs=20 faults=10
+2026-11-23 16:14:54,710 | INFO    | osim.memory | FIFO: frames=5 refs=20 faults=9
+2026-11-23 16:14:54,710 | INFO    | osim.memory | FIFO: frames=6 refs=20 faults=6
+2026-11-23 16:14:54,710 | INFO    | osim.memory | LRU: frames=1 refs=20 faults=20
+2026-11-23 16:14:54,710 | INFO    | osim.memory | LRU: frames=2 refs=20 faults=17
+2026-11-23 16:14:54,710 | INFO    | osim.memory | LRU: frames=3 refs=20 faults=12
+2026-11-23 16:14:54,710 | INFO    | osim.memory | LRU: frames=4 refs=20 faults=8
+2026-11-23 16:14:54,710 | INFO    | osim.memory | LRU: frames=5 refs=20 faults=7
+2026-11-23 16:14:54,710 | INFO    | osim.memory | LRU: frames=6 refs=20 faults=6
+2026-11-23 16:14:54,710 | INFO    | osim.memory | Optimal: frames=1 refs=20 faults=20
+2026-11-23 16:14:54,710 | INFO    | osim.memory | Optimal: frames=2 refs=20 faults=13
+2026-11-23 16:14:54,710 | INFO    | osim.memory | Optimal: frames=3 refs=20 faults=9
+2026-11-23 16:14:54,710 | INFO    | osim.memory | Optimal: frames=4 refs=20 faults=8
+2026-11-23 16:14:54,710 | INFO    | osim.memory | Optimal: frames=5 refs=20 faults=7
+2026-11-23 16:14:54,711 | INFO    | osim.memory | Optimal: frames=6 refs=20 faults=6
+2026-11-23 16:14:54,807 | INFO    | osim.memory | allocation first-fit: unplaced=1 leftover=959
+2026-11-23 16:14:54,807 | INFO    | osim.memory | allocation best-fit: unplaced=0 leftover=533
+2026-11-23 16:14:54,807 | INFO    | osim.memory | allocation worst-fit: unplaced=1 leftover=959
+2026-11-23 16:14:54,807 | INFO    | osim.deadlock | safety check: safe=True sequence=['P1', 'P3', 'P4', 'P0', 'P2']
+2026-11-23 16:14:54,807 | INFO    | osim.deadlock | safety check: safe=True sequence=['P1', 'P3', 'P4', 'P0', 'P2']
+2026-11-23 16:14:54,807 | INFO    | osim.deadlock | request P1 [1, 0, 2] granted
+2026-11-23 16:14:54,807 | INFO    | osim.deadlock | safety check: safe=False sequence=[]
+2026-11-23 16:14:54,807 | WARNING | osim.deadlock | request P4 [3, 3, 0] denied - would be unsafe
+2026-11-23 16:14:54,807 | INFO    | osim.deadlock | safety check: safe=True sequence=['P3', 'P1', 'P2', 'P0', 'P4']
+2026-11-23 16:14:54,807 | INFO    | osim.deadlock | request P0 [0, 2, 0] granted
+2026-11-23 16:14:54,807 | INFO    | osim.deadlock | deadlock detection: ['P1', 'P2', 'P3', 'P4']
+2026-11-23 16:14:54,807 | INFO    | osim.disk | FCFS: movement=640
+2026-11-23 16:14:54,807 | INFO    | osim.disk | SSTF: movement=236
+2026-11-23 16:14:54,807 | INFO    | osim.disk | SCAN: movement=331
+2026-11-23 16:14:54,807 | INFO    | osim.disk | C-SCAN: movement=382
+2026-11-23 16:14:54,807 | INFO    | osim.disk | LOOK: movement=299
+2026-11-23 16:14:54,914 | INFO    | osim.bash | script sysinfo.sh ok
+2026-11-23 16:14:54,929 | INFO    | osim.bash | script log_summary.sh ok
+2026-11-23 16:14:54,930 | INFO    | osim.main | demo finished
+2026-11-23 16:14:55,077 | INFO    | osim.main | demo started (large=True)
+2026-11-23 16:14:55,077 | INFO    | osim.scheduler | FCFS finished: avg_wait=183.35 avg_tat=194.45
+2026-11-23 16:14:55,077 | INFO    | osim.scheduler | SJF finished: avg_wait=120.88 avg_tat=131.97
+2026-11-23 16:14:55,079 | INFO    | osim.scheduler | SRTF finished: avg_wait=120.42 avg_tat=131.53
+2026-11-23 16:14:55,079 | INFO    | osim.scheduler | RR(q=3) finished: avg_wait=252.88 avg_tat=263.98
+2026-11-23 16:14:55,079 | INFO    | osim.scheduler | Priority finished: avg_wait=169.00 avg_tat=180.10
+2026-11-23 16:14:55,803 | INFO    | osim.memory | FIFO: frames=4 refs=300 faults=145
+2026-11-23 16:14:55,803 | INFO    | osim.memory | LRU: frames=4 refs=300 faults=144
+2026-11-23 16:14:55,804 | INFO    | osim.memory | Optimal: frames=4 refs=300 faults=110
+2026-11-23 16:14:55,804 | INFO    | osim.memory | LRU: frames=4 refs=300 faults=144
+2026-11-23 16:14:55,804 | INFO    | osim.memory | FIFO: frames=1 refs=300 faults=224
+2026-11-23 16:14:55,804 | INFO    | osim.memory | FIFO: frames=2 refs=300 faults=182
+2026-11-23 16:14:55,804 | INFO    | osim.memory | FIFO: frames=3 refs=300 faults=162
+2026-11-23 16:14:55,804 | INFO    | osim.memory | FIFO: frames=4 refs=300 faults=145
+2026-11-23 16:14:55,804 | INFO    | osim.memory | FIFO: frames=5 refs=300 faults=137
+2026-11-23 16:14:55,805 | INFO    | osim.memory | FIFO: frames=6 refs=300 faults=132
+2026-11-23 16:14:55,805 | INFO    | osim.memory | FIFO: frames=7 refs=300 faults=116
+2026-11-23 16:14:55,805 | INFO    | osim.memory | FIFO: frames=8 refs=300 faults=101
+2026-11-23 16:14:55,805 | INFO    | osim.memory | LRU: frames=1 refs=300 faults=224
+2026-11-23 16:14:55,805 | INFO    | osim.memory | LRU: frames=2 refs=300 faults=177
+2026-11-23 16:14:55,805 | INFO    | osim.memory | LRU: frames=3 refs=300 faults=155
+2026-11-23 16:14:55,805 | INFO    | osim.memory | LRU: frames=4 refs=300 faults=144
+2026-11-23 16:14:55,805 | INFO    | osim.memory | LRU: frames=5 refs=300 faults=139
+2026-11-23 16:14:55,805 | INFO    | osim.memory | LRU: frames=6 refs=300 faults=130
+2026-11-23 16:14:55,805 | INFO    | osim.memory | LRU: frames=7 refs=300 faults=114
+2026-11-23 16:14:55,805 | INFO    | osim.memory | LRU: frames=8 refs=300 faults=99
+2026-11-23 16:14:55,805 | INFO    | osim.memory | Optimal: frames=1 refs=300 faults=224
+2026-11-23 16:14:55,806 | INFO    | osim.memory | Optimal: frames=2 refs=300 faults=161
+2026-11-23 16:14:55,806 | INFO    | osim.memory | Optimal: frames=3 refs=300 faults=130
+2026-11-23 16:14:55,806 | INFO    | osim.memory | Optimal: frames=4 refs=300 faults=110
+2026-11-23 16:14:55,806 | INFO    | osim.memory | Optimal: frames=5 refs=300 faults=95
+2026-11-23 16:14:55,806 | INFO    | osim.memory | Optimal: frames=6 refs=300 faults=82
+2026-11-23 16:14:55,807 | INFO    | osim.memory | Optimal: frames=7 refs=300 faults=69
+2026-11-23 16:14:55,807 | INFO    | osim.memory | Optimal: frames=8 refs=300 faults=58
+2026-11-23 16:14:55,906 | INFO    | osim.memory | allocation first-fit: unplaced=1 leftover=959
+2026-11-23 16:14:55,906 | INFO    | osim.memory | allocation best-fit: unplaced=0 leftover=533
+2026-11-23 16:14:55,906 | INFO    | osim.memory | allocation worst-fit: unplaced=1 leftover=959
+2026-11-23 16:14:55,906 | INFO    | osim.deadlock | safety check: safe=True sequence=['P1', 'P3', 'P4', 'P0', 'P2']
+2026-11-23 16:14:55,906 | INFO    | osim.deadlock | safety check: safe=True sequence=['P1', 'P3', 'P4', 'P0', 'P2']
+2026-11-23 16:14:55,906 | INFO    | osim.deadlock | request P1 [1, 0, 2] granted
+2026-11-23 16:14:55,906 | INFO    | osim.deadlock | safety check: safe=False sequence=[]
+2026-11-23 16:14:55,906 | WARNING | osim.deadlock | request P4 [3, 3, 0] denied - would be unsafe
+2026-11-23 16:14:55,907 | INFO    | osim.deadlock | safety check: safe=True sequence=['P3', 'P1', 'P2', 'P0', 'P4']
+2026-11-23 16:14:55,907 | INFO    | osim.deadlock | request P0 [0, 2, 0] granted
+2026-11-23 16:14:55,907 | INFO    | osim.deadlock | deadlock detection: ['P1', 'P2', 'P3', 'P4']
+2026-11-23 16:14:55,907 | INFO    | osim.disk | FCFS: movement=7023
+2026-11-23 16:14:55,907 | INFO    | osim.disk | SSTF: movement=890
+2026-11-23 16:14:55,907 | INFO    | osim.disk | SCAN: movement=894
+2026-11-23 16:14:55,907 | INFO    | osim.disk | C-SCAN: movement=972
+2026-11-23 16:14:55,907 | INFO    | osim.disk | LOOK: movement=890
+2026-11-23 16:14:56,017 | INFO    | osim.bash | script sysinfo.sh ok
+2026-11-23 16:14:56,032 | INFO    | osim.bash | script log_summary.sh ok
+2026-11-23 16:14:56,033 | INFO    | osim.main | demo finished
+2026-11-23 16:14:56,190 | WARNING | osim.main | invalid menu choice 'abc'
+2026-11-23 16:14:56,191 | WARNING | osim.main | invalid menu choice '9'
+2026-11-23 16:14:56,191 | WARNING | osim.main | invalid input: count must be an integer, got 'zero'
+2026-11-23 16:14:56,191 | WARNING | osim.main | invalid input: count must be between 1 and 20, got -5
+2026-11-23 16:14:56,191 | INFO    | osim.scheduler | FCFS finished: avg_wait=2.00 avg_tat=5.00
+2026-11-23 16:14:56,191 | INFO    | osim.scheduler | SJF finished: avg_wait=1.00 avg_tat=4.00
+2026-11-23 16:14:56,191 | INFO    | osim.scheduler | SRTF finished: avg_wait=1.00 avg_tat=4.00
+2026-11-23 16:14:56,191 | INFO    | osim.scheduler | RR(q=1) finished: avg_wait=2.00 avg_tat=5.00
+2026-11-23 16:14:56,191 | INFO    | osim.scheduler | Priority finished: avg_wait=1.00 avg_tat=4.00
+2026-11-23 16:14:56,670 | WARNING | osim.main | invalid input: quantum must be between 1 and 100, got 0
+2026-11-23 16:14:56,670 | INFO    | osim.scheduler | FCFS finished: avg_wait=13.17 avg_tat=18.83
+2026-11-23 16:14:56,670 | INFO    | osim.scheduler | SJF finished: avg_wait=10.00 avg_tat=15.67
+2026-11-23 16:14:56,670 | INFO    | osim.scheduler | SRTF finished: avg_wait=8.50 avg_tat=14.17
+2026-11-23 16:14:56,670 | INFO    | osim.scheduler | RR(q=2) finished: avg_wait=16.33 avg_tat=22.00
+2026-11-23 16:14:56,670 | INFO    | osim.scheduler | Priority finished: avg_wait=12.67 avg_tat=18.33
